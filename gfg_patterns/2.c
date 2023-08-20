@@ -1,10 +1,10 @@
 #include <stdio.h>
-void printSquare(int n)
+void printTriangle(int n) 
 {
-    //print the grid
+    // make the left aligned triangle
     for (int j = 0; j < n; j++)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < j+1; i++)
         {
             printf("* ");
         }
@@ -14,9 +14,9 @@ void printSquare(int n)
 }
 int main(void)
 {
-    // prompt the user for size
+    //prompt the user for size
     int s;
     scanf("%d", &s);
-    printSquare(s);    
+    printTriangle(s);
     return 0;
 }
