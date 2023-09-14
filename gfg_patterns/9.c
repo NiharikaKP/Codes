@@ -32,6 +32,7 @@ int main(void)
 {
     // prompt the user for size
     int s;
+    printf("Size: ");
     scanf("%d", &s);
     printDiamond(s);
     return 0;
